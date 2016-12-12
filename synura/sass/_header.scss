@@ -1,0 +1,59 @@
+.main-header {
+	height: 300px;
+	background: #368F8B no-repeat;
+}
+
+.logo {
+	@include span(2);
+
+	img {
+		max-width: 100%;
+	}
+}
+
+.main-navigation {
+	margin-top:	25px;
+	@include span(5 last);
+
+	li {
+		float: left;
+	}
+
+	a {
+		display: block;
+		color: #FFF;
+		text-decoration: none;
+		padding: 0 10px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.header-content h1 {
+	font-family: 'Dosis', sans-serif !important;
+	color:	#160F29;
+}
+
+.header-content {
+	max-width:	35%;
+	text-align:	center;
+	padding-top:	2em;
+}
+
+#skills-list li {
+	color: #FFF;
+	display: inline;
+	list-decoration: none;
+	border-right: 1px solid;
+	padding: 0px 10px;
+
+	&:last-child {
+		border-right: 0px;
+	}
+
+	@media(max-width: 512px) {
+		border-right:	0px;
+	}
+}
